@@ -1,0 +1,475 @@
+body {
+  background-size: cover;
+  background-color: white;
+  font-family: 'Arimo', sans-serif;
+}
+
+#background img{
+  width: 100%;
+  height: 700px;
+  z-index: -1;
+  -webkit-filter: blur(20px);
+  filter: blur(20px;);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#ctext{
+  color: white;
+  font-size: 90px;
+  position: absolute;
+  margin-top: -34.5%;
+  margin-left: 10%;
+  font-family: 'Arimo', sans-serif;
+}
+#ctextfirst{
+  z-index: 2;
+  margin-top: 7%;
+  margin-left: 10%;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Arimo', sans-serif;
+}
+#ctextsecond{
+  margin-top: -3%;
+  margin-left: 10%;
+}
+
+#box input{
+  height: 30px;
+  width: 450px;
+  font-size: 16px;
+  color: gray;
+  background-color: #9B9B9B;
+  border: 0px solid;
+  margin-left: 10%;
+}
+#box #input{
+  margin-top: 5%;
+  padding-bottom: 200px;
+}
+#box #send{
+  color: white;
+  background-color: black;
+  border-radius: 0px;
+  width: 452px;
+  border: 1px solid red;
+  margin-top: 5%;
+  display: none;
+}
+#box #confirm{
+  color: white;
+  background-color: black;
+  border-radius: 0px;
+  width: 452px;
+  border: 1px solid red;
+  margin-top: 5%;
+}
+
+
+#box{
+  position: absolute;
+  background-color: #E0E0E0;
+  width: 600px;
+  height: 500px;
+  margin-top: -29%;
+  margin-left: 10%;
+}
+
+#map{
+  position: absolute;
+  background-color: black;
+  width: 400px;
+  height: 500px;
+  margin-top: -29%;
+  margin-left: 56%;
+  color: white;
+  overflow: scroll;
+}
+
+.nyc, .island, .miami,
+.dallas, .ire{
+  margin-left: 30%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+hr{
+  width: 200px;
+  margin-left: 0%;
+}
+
+
+#canvas{
+  height: 250px;
+  width: 100%;
+}
+
+@media only screen and (width: 1920px){
+  #background img{
+    height: 1000px;
+  }
+  #ctext{
+    margin-top: -24.5%;
+  }
+  #box{
+    margin-top: -20.8%;
+  }
+  #map{
+    margin-top: -20.8%;
+    margin-left: 41.1%;
+  }
+  #canvas{
+    height: 400px;
+  }
+}
+
+@media only screen and (width: 1440px){
+  #background img{
+    height: 900px;
+  }
+  #box{
+    margin-top: -29.5%;
+  }
+  #map{
+    margin-top: -29.5%;
+    margin-left: 51%;
+  }
+  #canvas{
+    height: 300px;
+  }
+}
+
+@media only screen and (width: 1366px){
+  #box{
+    margin-top: -29.5%;
+  }
+  #map{
+    margin-top: -29.5%;
+    margin-left: 53%;
+  }
+}
+
+@media only screen and (width: 1080px){
+  #background img{
+    height: 800px;
+  }
+  #ctext{
+    margin-top: -45%;
+    margin-left: 5%;
+  }
+  #box{
+    margin-top: -38.5%;
+    margin-left: 5%;
+  }
+  #map{
+    margin-top: -38.5%;
+    margin-left: 58%;
+  }
+  #canvas{
+    height: 300px;
+  }
+}
+@media only screen and (width: 1024px){
+  #ctext{
+    margin-top: -36%;
+    margin-left: 3%;
+  }
+  #box{
+    margin-left: 3%;
+  }
+  #map{
+    margin-left: 57%;
+  }
+}
+
+@media only screen and (width: 800px){
+  #ctext{
+    margin-top: -60%;
+    font-size: 80px;
+    margin-left: 20%;
+  }
+  #box{
+    margin-top: -52%;
+    margin-left: 20%;
+    width: 480px;
+  }
+  #ctextfirst{
+    margin-left: 5%;
+  }
+  #ctextsecond{
+    margin-left: 5%;
+  }
+  #box input{
+    margin-left: 5%;
+    width: 430px;
+  }
+  #box #confirm, #box #send{
+    width: 433px;
+  } 
+  #map{
+    margin-top: 10%;
+    margin-left: 20%;
+    width: 480px;
+  }
+  #map img{
+    width: 480px;
+  }
+  #canvas{
+    height: 600px;
+  }
+}
+
+@media only screen and (width: 736px){
+  #box{
+    margin-top: -24%;
+  }
+  #map{
+    width: 600px;
+    margin-top: 43.5%;
+    margin-left: 10%;
+  }
+  #map img{
+    width: 100%;
+    height: 200px;
+  }
+
+  .nyc, .island, .miami,
+  .dallas, .ire{
+    margin-left: 35%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+}
+
+@media only screen and (width: 708px){
+  #ctext{
+    margin-top: -65%;
+    font-size: 80px;
+    margin-left: 20%;
+  }
+  #box{
+    margin-top: -56%;
+    margin-left: 20%;
+    width: 480px;
+  }
+  #ctextfirst{
+    margin-left: 5%;
+  }
+  #ctextsecond{
+    margin-left: 5%;
+  }
+  #box input{
+    margin-left: 5%;
+    width: 430px;
+  }
+  #box #confirm, #box #send{
+    width: 433px;
+  } 
+  #map{
+    margin-top: 10%;
+    margin-left: 20%;
+    width: 480px;
+  }
+  #map img{
+    width: 480px;
+  }
+  #canvas{
+    height: 600px;
+  }
+}
+@media only screen and (width: 667px){
+  #ctext{
+    margin-top: -68%;
+    font-size: 80px;
+    margin-left: 15%;
+  }
+  #box{
+    margin-top: -59%;
+    margin-left: 15%;
+    width: 480px;
+  }
+  #ctextfirst{
+    margin-left: 5%;
+  }
+  #ctextsecond{
+    margin-left: 5%;
+  }
+  #box input{
+    margin-left: 5%;
+    width: 430px;
+  }
+  #box #confirm, #box #send{
+    width: 433px;
+  } 
+  #map{
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 480px;
+  }
+  #map img{
+    width: 480px;
+  }
+  #canvas{
+    height: 600px;
+  }
+
+  .nyc, .island, .miami,
+  .dallas, .ire{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+}
+@media only screen and (width: 568px){
+  #ctext{
+    margin-top: -80%;
+    font-size: 80px;
+    margin-left: 8%;
+  }
+  #box{
+    margin-top: -69%;
+    margin-left: 8%;
+    width: 480px;
+  }
+  #ctextfirst{
+    margin-left: 5%;
+  }
+  #ctextsecond{
+    margin-left: 5%;
+  }
+  #box input{
+    margin-left: 5%;
+    width: 430px;
+  }
+  #box #confirm, #box #send{
+    width: 433px;
+  } 
+  #map{
+    margin-top: 15%;
+    margin-left: 8%;
+    width: 480px;
+  }
+  #map img{
+    width: 480px;
+  }
+  #canvas{
+    height: 600px;
+  }
+}
+
+
+@media only screen and (max-width: 414px){
+  #background img{
+    height: 600px;
+  }
+  #ctext{
+    font-size: 60px;
+    margin-top: -115%;
+  }
+  #box{
+    margin-top: -104%;
+    margin-left: 1.5%;
+    width: 400px;
+  }
+  #ctextfirst, #ctextsecond{
+    margin-left: 6%;
+  }
+  #box input{
+    margin-left: 6%;
+    width: 350px;
+  }
+  #box #confirm, #box #send{
+    width: 353px;
+  }
+
+  #map{
+    margin-left: 1.5%;
+    margin-top: 10%;
+  }
+  .nyc, .island, .miami,
+  .dallas, .ire{
+    margin-left: 25%;
+  }
+  hr{
+    width: 150px;
+  }
+  #canvas{
+    height: 550px;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  #ctext{
+    margin-top: -130%;
+  }
+  #box{
+    margin-top: -117%;
+    width: 360px;
+  }
+  #ctextsecond{
+    font-size: 14px;
+  }
+  #box input{
+    width: 315px;
+  }
+  #box #confirm, #box #send{
+    width: 318px;
+  }
+  #map{
+    width: 360px;
+    margin-top: 5%;
+  }
+  .nyc, .island, .miami,
+  .dallas, .ire{
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (width: 320px){
+  #ctext{
+    font-size: 55px;
+    margin-top: -150%;
+  }
+  #box{
+    margin-top: -136.5%;
+    width: 308px;
+  }
+  #ctextfirst{
+    font-size: 20px;
+  }
+  #ctextsecond{
+    font-size: 12px;
+  }
+  #box input{
+    width: 270px;
+  }
+  #box #confirm, #box #send{
+    width: 273px;
+  }
+  #map{
+    width: 308px;
+    margin-top: 0%;
+  }
+  .nyc, .island, .miami,
+  .dallas, .ire{
+    margin-left: 25%;
+  }
+  #canvas{
+    height: 520px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

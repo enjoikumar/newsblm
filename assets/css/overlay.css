@@ -1,0 +1,200 @@
+.leadership .overlay {
+  position: absolute;
+  height: 426px;
+  width: 426px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ee3b2c;
+  margin-top: 358%;
+}
+.overlay:hover{
+  opacity: .8;
+}
+
+.text {
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  text-align: center;
+}
+
+.leadership .overlay2 {
+  position: absolute;
+  height: 426px;
+  width: 426px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ee3b2c;
+  margin-top: 426px;
+}
+.overlay2:hover{
+  opacity: .8;
+}
+
+.text2 {
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  top: 40%;
+  left: 17%;
+  text-align: center;
+}
+
+
+.leadership .overlay3 {
+  position: absolute;
+  height: 426px;
+  width: 426px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ee3b2c;
+  margin-top: 426px;
+  margin-left: 426px;
+}
+.overlay3:hover{
+  opacity: .8;
+}
+
+.text3 {
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  text-align: center;
+}
+
+
+.leadership .overlay4 {
+  position: absolute;
+  height: 426px;
+  width: 426px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ee3b2c;
+  margin-top: 426px;
+  margin-left: 852px;
+}
+.overlay4:hover{
+  opacity: .8;
+}
+
+.text4 {
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  text-align: center;
+}
+
+
+.leadership .overlay5 {
+  position: absolute;
+  height: 426px;
+  width: 426px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ee3b2c;
+  margin-top: 852px;
+}
+.overlay5:hover{
+  opacity: .8;
+}
+
+.text5 {
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  top: 40%;
+  left: 23%;
+  text-align: center;
+}
+
+
+.leadership .overlay6 {
+  position: absolute;
+  height: 426px;
+  width: 426px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ee3b2c;
+  margin-top: 852px;
+  margin-left: 426px;
+}
+.overlay6:hover{
+  opacity: .8;
+}
+
+.text6 {
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  text-align: center;
+}
+
+.leadership .overlay7 {
+  position: absolute;
+  height: 426px;
+  width: 426px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ee3b2c;
+  margin-top: 852px;
+  margin-left: 852px;
+}
+.overlay7:hover{
+  opacity: .8;
+}
+
+.text7 {
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  top: 40%;
+  left: 23%;
+  text-align: center;
+}
+
+.leadership .overlay8 {
+  position: absolute;
+  height: 426px;
+  width: 426px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ee3b2c;
+  margin-top: 1278px;
+}
+.overlay8:hover{
+  opacity: .8;
+}
+
+.text8 {
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  top: 40%;
+  left: 23%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,612 @@
+*{
+	margin: 0;
+}
+
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+}
+
+.title{
+	position: absolute;
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	margin-left: 5%;
+	z-index: -1;
+}
+
+.opener img{
+	width: 100%;
+	height: 800px;
+	margin-top: 20%;
+}
+
+.info{
+	margin-top: -1%;
+	width: 100%;
+}
+.details{
+	display: none;
+}
+.details:hover{
+	cursor: pointer;
+}
+.info #bio{
+	font-size: 22px;
+	font-family: 'Arimo', sans-serif;
+	float: left;
+	display: inline;
+	width: 100%;
+	background-color: #FAFAFA;
+	border: solid 1px #979797;
+}
+#bio p{
+	width: 600px;
+	padding: 80px 80px 80px 80px;
+}
+
+
+.accordian{
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: 2s;
+}
+.accordion:after{
+	content: '   \02795';
+}
+.active, .accordian:hover{
+}
+.panel{
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+.active{
+	padding-bottom: 5%;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+.active:after{
+	content: "  \2796";
+}
+
+
+
+.headline1{
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	/*padding-bottom: 5%;*/
+	margin-left: 5%;
+	margin-top: 30%;
+	cursor: pointer;
+}
+
+.content1 #one{
+	width: 100%;
+	height: 700px;
+}
+.content1 #two{
+	margin-left: 15%;
+	margin-top: 50px;
+}
+
+hr{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 50px;
+	height: 3px;
+	background-color: black;
+}
+
+
+.headline2{
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	/*padding-bottom: 5%;*/
+	margin-left: 5%;
+	margin-top: 5%;
+	cursor: pointer;
+}
+
+.content2 #one{
+	margin-left: 17%;
+}
+.content2 #two{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+.content2 #three{
+	margin-top: 50px;
+	width: 100%;
+}
+
+
+.content3 #one{
+	width: 60%;
+	margin-left: 20%;
+}
+.content3 #two{
+	width: 95%;
+	margin-left: 2.5%;
+	margin-top: 50px;
+}
+.content3 #three{
+	margin-top: 50px;
+}
+
+
+.content4 #one{
+	width: 90%;
+	margin-left: 5%;
+}
+.content4 #two{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+.content4 #three{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 50px;
+}
+
+
+.content5 #one{
+	width: 90%;
+	margin-left: 5%;
+}
+.content5 #two{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+.content5 #three{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 50px;
+}
+
+
+.content6 #one{
+	width: 95%;
+	margin-left: 2.5%;
+}
+.content6 #two{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+.content6 #three{
+	width: 100%;
+	margin-top: 50px;
+}
+
+
+.content7 #one{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 50px;
+}
+.content7 #two{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+.content7 #three{
+	width: 100%;
+	margin-top: 50px;
+}
+
+
+.content8 #one{
+	width: 80%;
+	margin-left: 10%;
+}
+.content8 #two{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 50px;
+}
+.content8 #three{
+	width: 100%;
+	margin-top: 50px;
+}
+
+
+.content9 #one{
+	width: 70%;
+	margin-left: 15%;
+}
+.content9 #two{
+	width: 100%;
+	margin-top: 50px;
+}
+
+
+.content10 #one{
+	width: 80%;
+	margin-left: 10%;
+}
+.content10 #two{
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 50px;
+}
+.content10 #three{
+	width: 100%;
+	margin-top: 50px;
+}
+
+
+.content11 #one{
+	width: 60%;
+	margin-left: 20%;
+}
+.content11 #two{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+.content11 #three{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 50px;
+}
+.content11 #four{
+	width: 100%;
+	margin-top: 50px;
+	padding-bottom: 60px;
+}
+
+.last{
+	padding-bottom: 7%;
+}
+
+.footer{
+	color: white;
+	font-size: 17px;
+	background-color: black;
+	width: 100%;
+	height: 40px;
+	cursor: pointer;
+	z-index: 4;
+	bottom: 0;
+	position: fixed;
+}
+.footer p{
+	display: inline-block;
+	margin-top: 11px;
+	margin-left: 20px;
+}
+.footer .line{
+	margin-left: 35px;
+}
+.footer a{
+	text-decoration: none;
+	color: white;
+	margin-left: 40px;
+}
+
+
+
+@media only screen and (width: 1920px){
+	.opener img{
+		height: 1100px;
+	}
+
+	#bio p{
+		font-size: 28px;
+	}
+
+	.content1 #one{
+		height: 1100px;
+	}
+	.content1 #two{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+
+	.content2 #one{
+		width: 80%;
+		margin-left: 10%;
+	}
+	.content2 #three{
+		height: 1100px;
+	}
+
+
+	.content3 #three{
+		margin-left: 15%;
+	}
+}
+
+@media only screen and (width: 1440px){
+	.content1 #two{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+
+	.content2 #one{
+		margin-left: 20%;
+	}
+
+	.content3 #three{
+		width: 100%;
+	}
+}
+
+@media only screen and (width: 1366px){
+	.content1 #two{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+
+	.content2 #one{
+		margin-left: 20%;
+	}
+
+	.content3 #three{
+		width: 100%;
+	}
+}
+
+@media only screen and (width: 1080px){
+	.content1 #two{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+
+	.content2 #one{
+		margin-left: 12.5%;
+	}
+
+	.content3 #three{
+		width: 100%;
+	}
+
+}
+
+@media only screen and (width: 1024px){
+	.opener img{
+		height: 700px;
+	}
+
+	.content1 #two{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.content2 #one{
+		margin-left: 11%;
+	}
+
+	.content3 #three{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 736px){
+	.opener img{
+		height: 500px;
+	}
+	.info #bio p{
+		font-size: 17px;
+	}
+
+	.headline1{
+		padding-top: 10%;
+	}
+	.headline2{
+		padding-top: 5%;
+	}
+	.last{
+		padding-bottom: 15%;
+	}
+
+	.content1 #two{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+
+	.content2 #one{
+		width: 90%;
+		margin-left: 5%;
+	}
+	.content2 #two{
+		width: 80%;
+		margin-left: 10%;
+		margin-top: 50px;
+	}
+	.content2 #three{
+		margin-top: 50px;
+		width: 100%;
+	}
+
+
+	.content3 #three{
+		width: 100%;
+	}
+}
+
+@media only screen and (width: 667px){
+	.content2 #three{
+		height: 500px;
+	}
+}
+
+@media only screen and (width: 568px){
+	.info #bio p{
+		font-size: 17px;
+		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 414px){
+	.title{
+		padding-top: 15%;
+		font-size: 25px;
+		margin-left: 3%;
+	}
+	.opener img{
+		margin-top: 25%;
+		width: 100%;
+		height: 200px;
+	}
+	.details{
+		display: block;
+		font-size: 20px;
+		width: 100%;
+		padding-left: 30%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #ECEFF1;
+	}
+	.info #bio{
+		display: none;
+		border: none;
+		font-size: 20px;
+	}
+	#bio p{
+		width: 375px;
+		padding: 25px 0px 25px 25px;
+	}
+
+	.headline1{
+		font-size: 25px;
+		padding-top: 5%;
+	}
+	.content1 #one{
+		width: 100%;
+		height: 300px;
+	}
+	.content1 #two{
+		margin-left: 0%;
+		width: 100%;
+		height: 400px;
+	}
+
+	.last{
+		padding-bottom: 15%;
+	}
+
+	.headline2{
+		font-size: 25px;
+		padding-top: 5%;
+	}
+	.content2 #one{
+		width: 90%;
+		margin-left: 5%;
+	}
+	.content2 #three{
+		width: 100%;
+	}
+
+
+	.content3 #three{
+		width: 100%;
+	}
+
+}
+
+@media only screen and (width: 375px){
+	.title{
+		font-size: 18px;
+		margin-top: 5px;
+		margin-left: 12%;
+	}
+	.opener img{
+		height: 300px;
+	}
+	#bio p{
+		width: 330px;
+	}
+
+	.headline1,
+	.headline2{
+		font-size: 25px;
+	}
+
+	.footer a{
+		margin-left: 20px;
+	}
+}
+
+@media only screen and (width: 320px){
+	.title{
+		font-size: 18px;
+		margin-top: 5px;
+		margin-left: 6%;
+	}
+	.opener img{
+		height: 300px;
+	}
+	.details{
+		padding-left: 25%;
+	}
+	#bio p{
+		width: 280px;
+	}
+	.headline1,
+	.headline2{
+		font-size: 18px;
+	}
+
+	.last{
+		padding-bottom: 20%;
+	}
+
+	.footer p{
+		margin-left: 10px;
+	}
+	.footer .line{
+		margin-left: 20px;
+	}
+	.footer a{
+		margin-left: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

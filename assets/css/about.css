@@ -1,0 +1,857 @@
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.para,
+.list {
+  -webkit-animation: fadein 2000ms linear both;
+  animation: fadein 2000ms linear both;
+}
+
+
+/*#about{margin-left: 40px;}*/
+
+.para {
+  position: absolute;
+  color: #333;
+  width: 60%;
+  font-size: 25px;
+  line-height: 40px;
+  margin-left: 40px;
+  margin-top: 300px;
+  padding-left: 160px;
+  line-height: 40px;
+}
+
+.list {
+  position: absolute;
+  color: #333;
+  margin-top: 320px;
+  margin-left: -10px;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.list a {
+  display: inline-block;
+  color: #333;
+  text-align: center;
+  padding: 14px 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  transition: .5s;
+  font-size: 28px;
+}
+
+ul {
+  list-style: none;
+}
+
+.list a:hover {
+  cursor: pointer;
+  background-color: rgb(238, 60, 44);
+  color: white;
+}
+
+.overlay a:visited {
+  text-decoration: none;
+}
+
+.topnav #about {
+  background-color: #e4e4e4;
+  height: 50px;
+}
+
+
+
+
+.leadership{
+	position: absolute;
+	margin-top: 60%;
+}
+ img{
+	width: 40%;
+}
+ #name{
+	position: absolute;
+	font-size: 28px;
+	margin-top: -40%;
+	margin-left: 45%;
+}
+ #title{
+	position: absolute;
+	font-size: 20px;
+	margin-top: -37%;
+	margin-left: 45%;
+	color: gray;
+}
+ #quote{
+	position: absolute;
+	margin-top: -32%;
+	margin-left: 45%;
+	width: 50%;
+}
+ #line{
+	position: absolute;
+	background-color: red !important;
+	margin-top: -24%;
+	margin-left: 45%;
+	width: 50%;
+	height: 1px;
+}
+ #bio{
+	position: absolute;
+	margin-top: -20%;
+	margin-left: 45%;
+	width: 50%;
+}
+ #words{
+	position: absolute;
+	margin-top: -4%;
+	margin-left: 45%;
+}
+ b{
+	font-size: 18px;
+	padding-right: 25px;
+}
+.gf #line{
+  margin-top: -22%;
+}
+.jk .dr{
+  float: right;
+  margin-top: 12%;
+  margin-right: 14%;
+}
+.ml #line{
+  margin-top: -21.5%;
+}
+.jh #line{
+  margin-top: -20%;
+}
+.jh #bio{
+  margin-top: -15%;
+}
+.jc #line{
+  margin-top: -22%;
+}
+.jc #bio{
+  margin-top: -18%;
+}
+.eb #line{
+  margin-top: -21%;
+}
+.eb #bio{
+  margin-top: -17%;
+}
+.dn, .gf, .jk,
+.ml, .jh, .jc, .eb{
+	margin-top: 5%;
+}
+
+
+
+
+
+@media only screen and (width: 2560px) {
+  .para {
+    width: 35%;
+    font-size: 32px !important;
+    line-height: 51px;
+  }
+}
+
+@media only screen and (width: 1920px) {
+  .para {
+    width: 35%;
+    font-size: 32px !important;
+    line-height: 51px;
+  }
+  .list {
+    margin-top: 350px;
+  }
+}
+
+@media only screen and (width: 1024px) {
+  .leadership{
+    margin-top: 80%;
+  }
+
+  .jb #line{
+    margin-top: -22.5%;
+  }
+
+  .dn #line{
+    margin-top: -21.5%;
+  }
+
+  .gf #bio{
+    margin-top: -15%;
+  }
+  .gf #line{
+    margin-top: -18%;
+  }
+
+  .jk{
+    padding-top: 40px;
+  }
+
+  .ml{
+    padding-top: 40px;
+  }
+  .ml #bio{
+    margin-top: -13%;
+  }
+  .ml #line{
+    margin-top: -16%;
+  }
+
+
+  .jh{
+    padding-top: 100px;
+  }
+  .jh #line{
+    margin-top: -18%;
+  }
+
+  .jc #line{
+    margin-top: -20%;
+  }
+
+  .eb #line{
+    margin-top: -19%;
+  }
+}
+
+@media only screen and (width:800px) {
+  .list {
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (width: 768px) {
+  .list {
+    margin-top: 450px;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .list {
+    margin-top: 0px !important;
+  }
+  .para {
+    margin-top: 100px;
+    padding-left: 0px;
+    margin-left: 60px;
+  }
+  .leadership{
+    margin-top: 100%;
+  }
+  .dn, .gf, .jk,
+  .ml, .jh, .jc, .eb{
+    margin-top: 45%;
+  }
+  #title{
+    margin-top: -36%;
+  }
+
+  .jb #bio{
+    margin-top: -10%;
+  }
+  .jb #line{
+    margin-top: -15%;
+  }
+
+
+  .dn #bio{
+    margin-top: -5%;
+  }
+  .dn #line{
+    margin-top: -11%;
+  }
+
+
+  .gf #bio{
+    margin-top: -5%;
+  }
+  .gf #line{
+    margin-top: -8%;
+  }
+
+
+  .jk #bio{
+    margin-top: -15%;
+  }
+  .jk #line{
+    margin-top: -18%;
+  }
+  .jk .dr{
+    margin-top: 17%;
+    margin-right: 6%;
+  }
+
+
+  .ml #bio{
+    margin-top: 0%;
+  }
+  .ml #line{
+    margin-top: -3%;
+  }
+
+
+  .jh{
+    padding-top: 60px;
+  }
+  .jh #bio{
+    margin-top: 0%;
+  }
+  .jh #line{
+    margin-top: -5%;
+  }
+
+
+  .jc #bio{
+    margin-top: -5%;
+  }
+  .jc #line{
+    margin-top: -9%;
+  }
+
+
+  .eb #bio{
+    margin-top: -5%;
+  }
+  .eb #line{
+    margin-top: -8%;
+  }
+
+
+  .ppl{
+    padding-bottom: 300px;
+  }
+
+}
+
+@media only screen and (width: 667px) {
+  .list {
+    margin-top: 0px !important;
+  }
+  .para {
+    margin-top: 100px;
+    padding-left: 0px;
+    margin-left: 60px;
+  }
+
+  .leadership{
+    margin-top: 120%;
+  }
+  .leadership #quote{
+    margin-top: -31%;
+  }
+
+  .jb #line{
+    margin-top: -14%;
+  }
+
+  .dn #line{
+    margin-top: -8.5%;
+  }
+
+  .gf{
+    padding-bottom: 50px;
+  }
+  .gf #bio{
+    margin-top: 0%;
+  }
+  .gf #title{
+    margin-top: -35.5%;
+  }
+  .gf #line{
+    margin-top: -2.5%;
+  }
+
+  .jk{
+    padding-bottom: 60px;
+  }
+  .jk .dr{
+    margin-top: 21%;
+    margin-right: 8%;
+  }
+  .jk #line{
+    margin-top: -15%;
+  }
+  .jk #bio{
+    margin-top: -10%;
+  }
+
+  .ml #bio{
+    margin-top: 5%;
+  }
+  .ml #line{
+    margin-top: 2.5%;
+  }
+
+  .jh{
+    padding-top: 140px;
+  }
+  .jh #bio{
+    margin-top: 5%;
+  }
+  .jh #line{
+    margin-top: 1%;
+  }
+
+  .jc #line{
+    margin-top: -7%;
+  }
+
+  .eb #line{
+    margin-top: -6.5%;
+  }
+}
+
+@media only screen and (width: 568px) {
+  .list {
+    margin-top: 0px !important;
+  }
+  .para {
+    margin-top: 100px;
+    padding-left: 0px;
+    margin-left: 60px;
+  }
+
+  .leadership{
+    margin-top: 180%;
+  }
+  .ppl{
+    padding-bottom: 500px;
+  }
+
+  #quote{
+    margin-top: -31%;
+  }
+
+  .dn, .gf, .jk,
+  .ml, .jh, .jc, .eb{
+    margin-top: 85%;
+  }
+
+  .jb #bio{
+    margin-top: 0%;
+  }
+  .jb #line{
+    margin-top: -5%;
+  }
+
+  .dn #bio{
+    margin-top: 5%;
+  }
+  .dn #line{
+    margin-top: 0%;
+  }
+
+  .gf{
+    padding-bottom: 60px;
+  }
+  .gf #title{
+    margin-top: -30%;
+  }
+  .gf #quote{
+    margin-top: -25%;
+  }
+  .gf #bio{
+    margin-top: 15%;
+  }
+  .gf #line{
+    margin-top: 13%;
+  }
+
+  .jk #line{
+    margin-top: -17%;
+  }
+  .jk .dr{
+    margin-top: 19.7%;
+  }
+
+  .ml{
+    padding-bottom: 80px;
+  }
+  .ml #bio{
+    margin-top: 20%;
+  }
+  .ml #line{
+    margin-top: 17%;
+  }
+
+  .jh #bio{
+    margin-top: 15%;
+  }
+  .jh #line{
+    margin-top: 10%;
+  }
+
+  .jc #bio{
+    margin-top: 5%;
+  }
+  .jc #line{
+    margin-top: 2%;
+  }
+  .jc{
+    margin-top: 70%;
+  }
+
+
+  .eb{
+    margin-top: 70%;
+  }
+  .eb #title{
+    margin-top: -28%;
+  }
+  .eb #quote{
+    margin-top: -23%;
+  }
+  .eb #line{
+    margin-top: 14%;
+  }
+  .eb #bio{
+    margin-top: 18%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .list {
+    margin-top: 0px !important;
+  }
+  .para {
+    font-size: 20px !important;
+    line-height: 32px !important;
+    margin-top: 100px;
+    padding-left: 0px;
+    margin-left: 60px;
+  }
+
+  .leadership{
+    margin-top: 190%;
+  }
+  
+  img{
+    width: 
+    100%;
+  }
+  #name{
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  #title{
+    margin-top: 13%;
+    margin-left: 5%;
+  }
+  #quote{
+    margin-top: 25%;
+    margin-left: 5%;
+    width: 90%;
+  }
+  #line{
+    margin-top: 55%;
+    margin-left: 5%;
+    width: 90%; 
+  }
+  #bio{
+    margin-top: 62%;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .dn{
+    margin-top: 140%;
+  }
+  .dn #line{
+    margin-top: 57%;
+  }
+
+
+  .jb #bio{
+    margin-top: 60%;
+  }
+  .jb #line{
+    margin-top: 53%;
+  }
+  .jb{
+    padding-bottom: 30px;
+  }
+
+
+  .dn #bio{
+    margin-top: 62%;
+  }
+
+
+  .jk .dr{
+    margin-top: 40%;
+  }
+  .jk #line{
+    margin-top: 45%;
+  }
+  .jk #bio{
+    margin-top: 52%;
+  }
+
+
+  .gf{
+    margin-top: 140%;
+  }
+  .gf #line{
+    margin-top: 70%;
+  }
+  .gf #bio{
+    margin-top: 77%;
+  }
+
+  .jk{
+    margin-top: 150%;
+  }
+
+  .ml{
+    margin-top: 150%;
+  }
+  .ml #line{
+    margin-top: 80%;
+  }
+  .ml #bio{
+    margin-top: 90%;
+  }
+
+  .jh{
+    margin-top: 175%;
+  }
+  .jh #line{
+    margin-top: 73%;
+  }
+  .jh #bio{
+    margin-top: 80%;
+  }
+
+  .jc{
+    margin-top: 130%;
+  }
+  .jc #line{
+    margin-top: 65%;
+  }
+  .jc #bio{
+    margin-top: 75%;
+  }
+  
+  .eb{
+    margin-top: 140%;
+  }
+  .eb #line{
+    margin-top: 70%;
+  }
+  .eb #bio{
+    margin-top: 78%;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (width: 375px) {
+  .list {
+    margin-top: 0px !important;
+  }
+  .para {
+    margin-top: 100px;
+    padding-left: 0px;
+    margin-left: 60px;
+  }
+  #name{
+    font-size: 24px;
+  }
+  .leadership{
+    margin-top: 240%;
+  }
+
+  .dn{
+    margin-top: 160%;
+  }
+  .dn #line{
+    margin-top: 68%;
+  }
+  .dn #bio{
+    margin-top: 78%;
+  }
+
+  .gf{
+    margin-top: 165%;
+  }
+  .gf #line{
+    margin-top: 80%;
+  }
+  .gf #bio{
+    margin-top: 90%;
+  }
+
+  .jk{
+    margin-top: 175%;
+  }
+
+  .ml{
+    margin-top: 170%;
+  }
+  .ml #line{
+    margin-top: 85%;
+  }
+
+  .jh{
+    margin-top: 195%;
+  }
+  .jh #line{
+    margin-top: 83%;
+  }
+  .jh #bio{
+    margin-top: 90%;
+  }
+
+  .jc{
+    margin-top: 150%;
+  }
+  .jc #line{
+    margin-top: 75%;
+  }
+  .jc #bio{
+    margin-top: 85%;
+  }
+
+  .eb{
+    margin-top: 155%;
+  }
+}
+
+@media only screen and (width: 320px) {
+  .para {
+    width: 80%;
+  }
+  .list {
+    margin-top: 0px !important;
+  }
+  .para {
+    margin-top: 100px;
+    padding-left: 0px;
+    margin-left: 60px;
+  }
+
+  .leadership{
+    margin-top: 230%;
+  }
+
+  #name{
+    font-size: 20px;
+  }
+  #title{
+    font-size: 18px;
+  }
+
+  .jb #line{
+    margin-top: 70%;
+  }
+  .jb #bio{
+    margin-top: 80%;
+  }
+
+  .dn{
+    margin-top: 210%;
+  }
+  .dn #line{
+    margin-top: 80%;
+  }
+  .dn #bio{
+    margin-top: 90%;
+  }
+
+  .gf{
+    margin-top: 210%;
+  } 
+  .gf #line{
+    margin-top: 93%;
+  }
+  .gf #bio{
+    margin-top: 100%;
+  }
+
+  .jk{
+    margin-top: 225%;
+  }
+  .jk .dr{
+    margin-top: 43%; 
+  }
+
+
+  .ml{
+    margin-top: 205%;
+  }
+  .ml #line{
+    margin-top: 110%;
+  }
+  .ml #bio{
+    margin-top: 120%;
+  }
+
+  .jh{
+    margin-top: 263%;
+  }
+  .jh #line{
+    margin-top: 100%;
+  }
+  .jh #bio{
+    margin-top: 110%;
+  }
+
+  .jc{
+    margin-top: 190%;
+  } 
+  .jc #line{
+    margin-top: 90%;
+  }
+  .jc #bio{
+    margin-top: 100%;
+  }
+
+  .eb{
+    margin-top: 195%;
+  }
+  .eb #line{
+    margin-top: 95%;
+  }
+  .eb #bio{
+    margin-top: 105%;
+  }
+}
+
+
+
+
+
+

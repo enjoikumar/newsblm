@@ -1,0 +1,431 @@
+*{
+	margin: 0;
+}
+
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+}
+
+.title{
+	position: absolute;
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	margin-left: 5%;
+	z-index: -1;
+}
+
+.opener img{
+	width: 100%;
+	height: 900px;
+	margin-top: 20%;
+}
+
+.info{
+	margin-top: -1%;
+	width: 100%;
+}
+.details{
+	display: none;
+}
+.details:hover{
+	cursor: pointer;
+}
+.info #bio{
+	font-size: 22px;
+	font-family: 'Arimo', sans-serif;
+	float: left;
+	display: inline;
+	width: 60%;
+	background-color: #FAFAFA;
+	border: solid 1px #979797;
+}
+
+#bio p{
+	width: 600px;
+	padding: 80px 80px 80px 80px;
+}
+#stats{
+	display: inline;
+	font-family: 'Roboto', sans-serif;
+	float: left;
+	padding: 55px 120px 55px 120px;
+	background-color: #F5F5F5;
+	border: solid 1px #979797;
+	height: 882px;
+	width: 20.9%;
+}
+#stats #first{
+	font-size: 20px;
+}
+#stats #second{
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom: 50px;
+}
+
+.content #one{
+	margin-top: 10%;
+	width: 95%;
+	height: 1200px;
+	margin-left: 2.5%;
+}
+.content #two{
+	width: 90%;
+	height: 600px;
+	margin-top: 50px;
+	margin-left: 5%;
+}
+.content #three{
+	width: 100%;
+	height: 700px;
+	margin-top: 50px;
+}
+.content #four{
+	width: 90%;
+	height: 700px;
+	margin-top: 50px;
+	margin-left: 5%;
+}
+.content #five{
+	width: 90%;
+	margin-top: 50px;
+	margin-left: 5%;
+}
+.content #six{
+	width: 80%;
+	margin-top: 50px;
+	margin-left: 10%;
+}
+.content #seven{
+	width: 100%;
+	margin-top: 50px;
+}
+.content #eight{
+	width: 90%;
+	margin-top: 50px;
+	margin-left: 5%;
+}
+.content #nine{
+	width: 95%;
+	margin-top: 50px;
+	margin-left: 2.5%;
+	padding-bottom: 60px;
+}
+
+
+.footer{
+	color: white;
+	font-size: 17px;
+	background-color: black;
+	width: 100%;
+	height: 40px;
+	cursor: pointer;
+	z-index: 4;
+	position: fixed;
+	bottom: 0;
+}
+.footer p{
+	display: inline-block;
+	margin-top: 11px;
+	margin-left: 20px;
+}
+.footer .line{
+	margin-left: 35px;
+}
+.footer a{
+	text-decoration: none;
+	color: white;
+	margin-left: 40px;
+}
+
+@media only screen and (width: 1920px){
+	.opener img{
+		height: 900px;
+	}
+	.info #bio{
+		width: 66.3%;
+		height: 898px;
+	}
+	#bio p{
+		width: 1100px;
+		padding: 80px 80px 80px 80px;
+		font-size: 28px;
+	}
+	.info #stats{
+		height: 788px;
+	}
+
+	.content #one{
+		height: 1400px;
+	}
+	.content #two{
+		height: 1100px;
+	}
+}
+
+@media only screen and (width: 1440px){
+	#stats{
+		width: 23%;
+	}
+}
+
+@media only screen and (width: 1366px){
+	#stats{
+		width: 22.12%;
+	}
+	.footer{
+		z-index: 4;
+	}
+}
+
+@media only screen and (width: 1080px){
+	.info #bio{
+		width: 736px;
+		height: 960px;
+	}
+	.info #stats{
+		width: 100px;
+		height: 850px;
+	}
+	.info #stats p{
+		width: 200px;
+		margin-left: -40px;
+	}
+}
+
+@media only screen and (width: 1024px){
+	.opener img{
+		height: 700px;
+	}
+	.info #bio{
+		width: 687.5px;
+	}
+	.info #bio p{
+		width: 550px;
+	}
+	.info #stats{
+		padding: 55px 68px 55px 50px;
+		height: 934px;
+	}
+
+	.content #one{
+		margin-top: 5%;
+	}
+}
+
+@media only screen and (max-width: 736px){
+	.opener img{
+		height: 500px;
+	}
+	.info #bio{
+		width: 460px;
+		height: 957px;
+	}
+	.info #bio p{
+		width: 380px;
+		font-size: 18px;
+		padding: 40px 0px 40px 40px;
+	}
+	.info #stats{
+		height: 847px;
+		padding: 55px 68px 55px 50px;
+	}
+	#stats #first{
+		font-size: 16px;
+	}
+	#stats #second{
+		font-size: 18px;
+	}
+
+	.content #one{
+		margin-top: 10%;
+		height: 800px;
+	}
+	.content #two{
+		height: 400px;
+	}
+	.content #four{
+		height: 400px;
+	}
+}
+
+@media only screen and (width: 667px){
+	.info #bio{
+		width: 405px;
+	}
+	.info #bio p{
+		font-size: 17px;
+		width: 340px;
+	}
+	.info #stats{
+		height: 847px;
+	}
+}
+
+@media only screen and (width: 568px){
+	.info #bio{
+		width: 371px;
+		height: 1187px;
+	}
+	.info #bio p{
+		width: 300px;
+	}
+	.info #stats{
+		width: 75px;
+		height: 1077px;
+	}
+}
+
+@media only screen and (max-width: 414px){
+	.title{
+		padding-top: 15%;
+		font-size: 25px;
+		margin-left: 3%;
+	}
+	.opener img{
+		margin-top: 25%;
+		width: 100%;
+		height: 300px;
+	}
+	.details{
+		display: block;
+		font-size: 20px;
+		width: 100%;
+		padding-left: 30%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #ECEFF1;
+	}
+	.info #bio, .info #stats{
+		display: none;
+	}
+	.info #bio{
+		border: none;
+		font-size: 20px;
+	}
+	#bio p{
+		width: 350px !important;
+		padding: 25px 0px 25px 25px;
+	}
+	.info #stats{
+		width: 100%;
+		padding: 20px 0px 0px 30px;
+		height: 300px;
+		border-left: none;
+		margin-top: 100px;
+	}
+	#stats #first{
+		font-size: 18px !important;
+	}
+	#stats #second{
+		padding-bottom: 20px !important;
+		font-size: 20px;
+	}
+
+	.content{
+		margin-top: 20%;
+	}
+	.content #one{
+		height: 500px;
+	}
+	.content #two{
+		height: 200px;
+	}
+	.content #three{
+		height: 300px;
+	}
+	.content #four{
+		height: 300px;
+	}
+}
+
+@media only screen and (width: 375px){
+	.title{
+		font-size: 18px;
+		margin-top: 5px;
+		margin-left: 12%;
+	}
+	.opener img{
+		height: 300px;
+	}
+	#bio p{
+		width: 300px !important;
+	}
+	.info #stats{
+		margin-top: 250px !important;
+	}
+	.footer a{
+		margin-left: 20px;
+	}	
+}
+
+@media only screen and (width: 320px){
+	.title{
+		font-size: 18px;
+		margin-top: 5px;
+		margin-left: 6%;
+	}
+	.opener img{
+		height: 300px;
+	}
+	.details{
+		padding-left: 25%;
+	}
+
+	#bio p{
+		width: 250px !important;
+	}
+	.info #stats{
+		margin-top: 475px !important;
+	}
+
+	.content #two{
+		height: 200px;
+	}
+
+	.footer p{
+		margin-left: 10px;
+	}
+	.footer .line{
+		margin-left: 20px;
+	}
+	.footer a{
+		margin-left: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,508 @@
+/* Remove margins and padding from the list, and add a black background color */
+
+body {
+  margin: 0;
+  /*font-family: 'Roboto', sans-serif;*/
+  overflow-x: hidden;
+  font-weight: lighter !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fa {
+  background-color: #e4e4e4;
+  height: 100%;
+  font-size: 16px !important;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  float: right;
+  padding-left: 60px !important;
+  margin-top: 3px !important;
+}
+
+.topnav .fa:hover {
+  background-color: white !important;
+  color: #e4e4e4 !important;
+}
+
+.topnav .fa-facebook,
+.topnav .fa-twitter,
+.topnav .fa-instagram,
+.topnav .fa-linkedin {
+  width: 5px;
+  background-color: white;
+  color: black !important;
+  margin-left: -40px !important;
+}
+
+.fold p {
+  max-width: 33%;
+}
+
+.fold {
+  opacity: 1 !important;
+  font-family: 'Arimo', sans-serif !important;
+  font-weight: lighter !important;
+}
+
+a.sblm {
+  color: white !important;
+}
+
+.sblm {
+  color: white !important;
+  background-color: black;
+  padding-bottom: 20px !important;
+}
+
+.sblm:hover {
+  background-color: #ee3b2c !important;
+}
+
+
+/* The Overlay (background) */
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 8;
+  left: 0;
+  top: 0;
+  background-color: white;
+  opacity: 0.95;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a:visited {
+  text-decoration: none;
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+  padding: 30px;
+  text-decoration: none !important;
+  font-size: 36px;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+  color: black !important;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #333;
+  -webkit-transition: color 2s ease-out;
+  -moz-transition: color 2s ease-out;
+  -o-transition: color 2s ease-out;
+  transition: color 2s ease-out;
+}
+
+.burger {
+  color: black;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  transform: scale(2, 3);
+}
+
+
+/*nav styling*/
+
+.topnav {
+  /*font-family: 'Arimo', sans-serif;*/
+  font: normal 20px Arimo;
+  color: #333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  -webkit-animation: slidein 4000ms linear both;
+  animation: slidein 4000ms linear both;
+}
+
+.link {
+  color: #333 !important;
+}
+
+.topnav a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 7px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  text-decoration: none;
+  transition: .5s;
+  font-size: 20px;
+}
+
+.sblm {
+  margin-left: 0px;
+  color: #333 !important;
+}
+
+.topnav {
+  padding-bottom: 0px;
+  height: 45px;
+}
+
+
+/* Float the list items side by side */
+
+.topnav li {
+  float: left;
+}
+
+
+/* Style the links inside the list items */
+
+.topnav a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  text-decoration: none;
+  transition: .5s;
+  font-size: 20px;
+}
+
+
+/*moving them x amount of pixels to the right*/
+
+.topnav .link {
+  margin-left: 00px;
+}
+
+
+/* Change background color of links on hover */
+
+.topnav a:hover {
+  background-color: #e4e4e4;
+  color: #333;
+  padding-bottom: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+  display: none;
+  color: black !important;
+}
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(: first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (width: 2560px) {
+  .topnav a {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+  }
+  .fold {
+    font-weight: normal !important;
+  }
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+
+@media screen and (width: 1920px) {
+  .fold p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+    text-align: center;
+  }
+  /*After responsive can change the text color, size, etc*/
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .topnav .fa {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .topnav {
+    width: 736px;
+    height: 50px;
+  }
+  .topnav .fa {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  ul.topnav li:not(: first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+    text-align: center;
+  }
+  /*After responsive can change the text color, size, etc*/
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .topnav {
+    width: 667px;
+  }
+  .topnav .fa {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  ul.topnav li:not(: first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+    text-align: center;
+  }
+  /*After responsive can change the text color, size, etc*/
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .topnav {
+    width: 568px;
+  }
+  .topnav .fa {
+    display: none !important;
+  }
+}
+
+@media only screen and (width: 568px){
+  .burger{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .link {
+    display: none !important;
+  }
+  ul.topnav li:not(: first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+    text-align: center;
+  }
+  /*After responsive can change the text color, size, etc*/
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .topnav {
+    width: 414px;
+    color: red;
+  }
+  .topnav .fa {
+    display: none !important;
+  }
+  a.fa.fa-linkedin,
+  a.fa.fa-twitter,
+  a.fa.fa-facebook,
+  a.fa.fa-instagram {
+    background-color: white !important;
+    width: 10px !important;
+    float: left !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  ul.topnav li:not(: first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+    text-align: center;
+  }
+  /*After responsive can change the text color, size, etc*/
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .topnav {
+    width: 375px;
+  }
+  .icon {
+    margin-top: 5px;
+  }
+  a.fa.fa-linkedin,
+  a.fa.fa-twitter,
+  a.fa.fa-facebook,
+  a.fa.fa-instagram {
+    background-color: white !important;
+    width: 10px !important;
+    float: left !important;
+    margin-left: -5px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  ul.topnav li:not(: first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+    text-align: center;
+  }
+  /*After responsive can change the text color, size, etc*/
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .topnav {
+    width: 320px;
+  }
+  a.fa.fa-linkedin,
+  a.fa.fa-twitter,
+  a.fa.fa-facebook,
+  a.fa.fa-instagram {
+    background-color: white !important;
+    width: 60px !important;
+    float: left !important;
+    margin-left: 0px !important;
+  }
+}
+
+.title {
+  font-family: 'Roboto', sans-serif !important;
+  opacity: 1 !important;
+}
+
+.history1 {
+  margin-top: -125px;
+}
+
+
+
+
+
+
